@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Recipe Chatbot</h1>
+
+        <div class="input-group">
+            <label>🔍 Search by Ingredients:</label>
+            <input type="text" id="ingredientInput" placeholder="Enter ingredients (comma-separated)">
+            <button onclick="searchRecipe()">Search</button>
+        </div>
+
+        <div class="input-group">
+            <label>🌍 Filter by Cuisine:</label>
+            <input type="text" id="cuisineInput" placeholder="Enter cuisine type">
+            <button onclick="searchRecipe()">Search</button>
+        </div>
+
+        <div class="input-group">
+            <label>🥗 Filter by Diet:</label>
+            <select id="dietInput">
+                <option value="">Any</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+            </select>
+            <button onclick="searchRecipe()">Search</button>
+        </div>
+
+        <h2>📜 Results:</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
